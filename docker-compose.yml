@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./api
+    env_file:
+      - .env
+    volumes:
+      - ./api:/app/api  
+    networks:
+      - app-network
+
+  ui:
+    build: ./ui
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./ui:/app  
+    networks:
+      - app-network
+    depends_on:
+      - api
+
+networks:
+  app-network:
+    driver: bridge
