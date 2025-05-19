@@ -1,0 +1,9 @@
+langchain-core
+langchain-openai
+langchain-groq
+langchain-chroma
+langgraph
+langchain-community
+typing-extensions
+tavily-python
+fastapi[standard]
