@@ -2,7 +2,7 @@
 
 A LangGraph-powered multi-agent system that routes user queries to specialized agents for processing information from the Official Gazette (Resmi Gazete) and current news sources.
 
-## 🚀 Features
+## 🚀 Features 
 
 - **Multi-Agent Architecture**: Uses a supervisor agent to route queries to specialized agents
 - **Official Gazette Agent**: Processes queries related to official government publications (limited to data between April 7-11)
